@@ -14,7 +14,7 @@ function Signup() {
     e.preventDefault()
     let data = new FormData(e.currentTarget)
 
-    axios.post("http://localhost:8000/signup/", data)
+    axios.post("https://anjieb.pythonanywhere.com/signup/", data)
     .then((response) => {
       if(response.data === 'signup successful'){
         alert("account created");
